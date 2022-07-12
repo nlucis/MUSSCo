@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  margin: 0px !important; 
+  padding: 0px !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(12, 100, 180);
+}
+
+canvas {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+main > canvas {
+  z-index: 0;
+  width: min-content;
+  border-radius: 3%;
+}
+
+#post-processor {
+  z-index: 2;
+}
