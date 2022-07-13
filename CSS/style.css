@@ -2,23 +2,37 @@ body {
   display: flex;
   margin: 0px !important; 
   padding: 0px !important;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: rgb(12, 100, 180);
 }
 
-canvas {
+/* canvas {
   margin: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
+} */
+
+main {
+  border: 3px solid red;
+  width: 90vw;
+  height: 75vh;
 }
 
-main > canvas {
+main > canvas { /* targets all P5 instances */
   z-index: 0;
   width: min-content;
-  border-radius: 3%;
+  border: 2px solid white; /* For layout dev only */
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/* Position the UI Elements */
+#title-bar {
+  margin: 10px;
+  position:relative;
+  left:100px;
+  top: 0px;
 }
 
 #post-processor {
