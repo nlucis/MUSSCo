@@ -8,27 +8,25 @@
   <title>nLucis Creative | .:GAL:.</title>
 </head>
 <body>
-  <!-- Post-Processing Overlay -->
+  <!-- Layout & Interface -->
+
+  <!-- Overlays -->
   <canvas id="post-processor"></canvas>
 
+  <!-- Library Dependencies -->
   <script src="Lib/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>  <!-- For intelligent audio processing, isolation, and replication -->
+  <script src="Lib/addons/p5.sound.js"></script>                        <!-- Audio sampling, synthesis and sequencing -->
+  <script src="Lib/addons/p5.funcGen.js"></script>                      <!-- Production of more complex frequency groups for replication -->
+  <script src="Lib/addons/p5.collide2d.js"></script>                    <!-- For triggering via synesthetic overlapping -->
 
-  <script src="Lib/addons/quicksettings.js"></script> 
-  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-  <script src="https://molleindustria.github.io/p5.play/lib/p5.play.js"></script>
-
-  <script src="Lib/addons/p5.gui.js"></script>
-  <script src="Lib/addons/p5.sound.js"></script>
-  <script src="Lib/addons/p5.funcGen.js"></script>
-  <!-- <script src="Lib/addons/p5.clickable.js"></script> -->
-  <script src="Lib/addons/p5.collide2d.js"></script>
-  <script src="Lib/addons/p5.sceneManager.js"></script>
-
+  <!-- OOP Helper and Stuff -->
   <script src="Script/utils.js"></script>
   <script src="Script/shapes.js"></script>
   <script src="Script/patterns.js"></script>
 
+  <!-- The Juicy Bits -->
+  <script src="Script/layout.js"></script>
   <script src="Script/core.js"></script>
-  <script src="Script/interface.js"></script>
 </body>
 </html>
